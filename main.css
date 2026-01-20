@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(186, 184, 165);
+   
+}
+
+#layoutgrid{
+    display: grid; 
+    height: 95vh; /* Fills the full height of the screen */
+    width: 95vw;
+    grid-template-rows: 45% 35% 20%;
+    gap: 10px; 
+    padding: 10px;
+    
+
+}
+
+@font-face {
+    
+    font-family: dots;
+    src: url(fonts/edundot.ttf);
+
+    font-family:'04b03';
+    src: url('fonts/04b03.woff2') format('woff2'),
+        url('fonts/04b03.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+    font-family: 'emojifont';
+    src: url('fonts/EmojiFont.ttf');
+
+
+
+    font-family: 'rodin';
+    src: url(fonts/FOT-Rodin\ Pro\ M.otf);
+
+}
+p1{
+    font-family:'04b03' !important;
+    
+    font-weight: normal;
+    color: rgb(145, 144, 128);
+    letter-spacing: 2px;
+}
+
+p2{
+    font-family:'emojifont' !important;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(145, 144, 128);
+    letter-spacing: 2px;
+}
+
+
+
+#content1, #content2, #footer{
+    min-height: 0;
+    /* background-color: lightblue; */
+    padding: 20px;
+
+}
+
+#content1{
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 6px;
+
+    
+    
+}
+
+#content1 img{
+   
+    padding-top: 10px;
+    height: 50%;
+    width: 50%;
+}
+#content2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 10px;
+    padding-left: 20px;
+      
+}
+
+.buttons{
+   /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+    border-left: solid 8px rgb(145, 144, 128);
+    
+}
+
+.button{
+    background: linear-gradient(to right, rgb(199,197,176), rgb(186, 184, 165));
+    font-family: 'rodin';
+   color: rgb(79,78,69);
+   border: none;
+   border-bottom: 4px double rgb(80, 80, 70);
+    border-radius: 0%;
+    width: 800px;
+    padding: 7px;
+    font-size: 14px;
+
+    
+}
+.button:hover{
+    background: linear-gradient(to right, rgb(81, 81, 72), rgb(186, 184, 165));
+}
+
+#footer{
+   padding-top: 30px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-family: '04b03';
+    color: rgb(145, 144, 128);
+    
+}
+
+#foottext{
+    padding: 20px;
+    
+    background-color: rgb(199, 197, 176);
+    border-left: solid 9px rgb(145,144,128);
+}
+

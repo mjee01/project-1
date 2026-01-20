@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(186, 184, 165);
+   
+}
+
+@font-face {
+    
+    font-family: dots;
+    src: url(fonts/edundot.ttf);
+
+    font-family:'04b03';
+    src: url('fonts/04b03.woff2') format('woff2'),
+        url('fonts/04b03.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+    font-family: 'emojifont';
+    src: url('fonts/EmojiFont.ttf');
+
+    font-family: 'rodin';
+    src: url(fonts/FOT-Rodin\ Pro\ M.otf);
+
+}
+
+.gridcontainer{
+    display:grid;
+    grid-template-rows: 20% 80%;
+    height: 95vh; /* Fills the full height of the screen */
+    width: 95vw;
+    padding:10px;
+    
+    
+}
+
+.top{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    padding:50px;
+
+}
+
+h1{
+    font-family: '04b03';
+    color: rgb(81, 81, 72)
+    
+}
+.bottom{
+    padding:50px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    gap: 20px;
+    padding-top:0px;
+    padding-bottom:0px;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+.left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(174,170,152);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:30px;
+    gap: 10px;
+    color:rgb(81, 81, 72);
+    font-family: 'rodin';
+    font-size: 14px;
+    align-items: center;
+  justify-content: center;
+}
+.left img{
+    max-width: 80%;
+    height:auto;
+    
+}
+.right{
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgb(174,170,152);
+}
+
+
+p{
+    color:rgb(81, 81, 72);
+    font-family: 'rodin';
+    font-size: 14px;
+
+}
+
+.text{
+    padding-left: 10px;
+    background-color: rgb(174,170,152);
+}
+
+.back{
+    background-color: rgb(145,144,128);
+    border:none;
+    color:rgb(81, 81, 72);
+    padding:5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: '04b03';
+  font-size: 16px;
+  margin: 4px 2px;
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  object-fit: contain;
+}
+.back:hover {
+    color: rgb(199,197,176);
+}
+.square:hover{
+    background-color: rgb(199,197,176);
+}
+.square{
+    width:20px;
+    height:20px;
+    background-color: rgb(81, 81, 72);
+}
